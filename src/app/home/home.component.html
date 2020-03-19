@@ -1,0 +1,43 @@
+<div style="height: 300px; width: 100%">
+    
+    <h3 style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;text-align: center;">COVID-19 CORONAVIRUS OUTBREAK </h3>
+    <h5 style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;text-align: center;">Last Updated:  {{dated}}</h5>
+    <hr/>
+    <div class="row">
+        <div class="column">
+            <h2 id="cases">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Coronavirus Cases</h2>
+            <h1 id="casesnum">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>{{alls.cases}}</b>&nbsp;&nbsp;<b>&uarr;</b></h1>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a [routerLink]="[]">view by country</a></p>
+        </div> <div class="column">
+            <h2 id="deaths">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Coronavirus Deaths</h2>
+            <h1 id="deathsnum">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>{{alls.deaths}}</b>&nbsp;&nbsp;<b>&uarr;</b></h1>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a [routerLink]="[]">view by country</a></p>
+
+        </div>
+        <div>
+            <h2 id="recoveredd">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Coronavirus Recovered</h2>
+            <h1 id="recovered">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>{{alls.recovered}}</b>&nbsp;&nbsp;<b>&uarr;</b></h1>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a [routerLink]="[]">view by country</a></p>
+        </div>
+</div>
+<hr/>
+<u><h2>Top new Stories</h2></u>
+&nbsp;
+&nbsp;
+<span *ngFor="let hero of actnews">
+<h4 class="news">{{hero.title}}</h4>
+<img src="{{hero.urlToImage}}"><br/>&nbsp;&nbsp;
+<p>{{hero.description}}</p>
+<span>To know More <a href="{{hero.url}}">click here</a></span>
+
+<hr/>
+</span>
+<hr/>
+<footer>
+    <p>Developed by:Ashish Holey</p>
+    <p>Contact information: <a href="ashish.holey56@gmail.com">
+        ashish.holey56@gmail.com</a>.</p>
+    <p>Total visited:{{count1}}</p>
+  </footer>
+
+
